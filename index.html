@@ -11,6 +11,7 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styling.css">
+    <script src="index.js" defer></script>
 </head>
 
 <body>
@@ -63,18 +64,16 @@
 
 
     <div class="previous-weather">
-        <label for="weather-toggle" class="show-previous-weather-label">
-            &#8593; <span class="sr-only">Show previous weather</span>
-        </label>
+        <button for="weather-toggle" class="show-previous-weather">
+            <span>&#8593;</span> <span class="sr-only">Show previous weather</span>
+        </button>
 
-        <input type="checkbox" class="show-previous-weather-toggle" id="weather-toggle">
-
-        <h2 class="main-title">Previous 7 Days</h2>
+        <h2 class="main-title previous-weather__title">Previous 7 Days</h2>
 
         <div class="previous-days">
             <div class="previous-day">
                 <h3 class="previous-day__sol">Sol 371</h3>
-                <p class="previous-day__date"></p>
+                <p class="previous-day__date">September 21</p>
                 <p class="previous-day__temp">High: -20°C</p>
                 <p class="previous-day__temp">Low: -120°C</p>
                 <button class="previous-day__more-info">More Info</button>
